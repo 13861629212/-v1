@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { WordEntry, DiscriminationEntry } from '../types';
-import { X, BookOpen, Tag, Layers, Info, Star, Bookmark, CheckCircle2 } from 'lucide-react';
+import { X, BookOpen, Tag, Layers, Info, Star, Bookmark, CheckCircle2, MessageSquare } from 'lucide-react';
 
 interface DetailModalProps {
   entry: WordEntry | DiscriminationEntry | null;
@@ -103,6 +103,18 @@ export default function DetailModal({
                   {isIdiom ? (entry as WordEntry).explanation : (entry as DiscriminationEntry).content}
                 </div>
               </section>
+
+              {entry.example && (
+                <section>
+                  <h4 className="flex items-center gap-2 text-sm font-bold text-slate-800 mb-3 uppercase tracking-wider">
+                    <MessageSquare size={16} className="text-green-500" />
+                    例句展示
+                  </h4>
+                  <div className="bg-green-50/50 p-5 rounded-2xl text-slate-700 leading-relaxed italic border border-green-100">
+                    {entry.example}
+                  </div>
+                </section>
+              )}
 
               {isIdiom && (
                 <div className="grid grid-cols-2 gap-4">

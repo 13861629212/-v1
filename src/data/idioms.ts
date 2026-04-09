@@ -2,18 +2,18 @@ import { WordEntry } from '../types';
 
 export const idioms: WordEntry[] = [
   // 第一组：中华文明传统文化
-  { id: '1-1', word: '源远流长', explanation: '源头远，水流长。也比喻历史悠久。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
-  { id: '1-2', word: '连绵不绝', explanation: '意思是连续而不中断。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
-  { id: '1-3', word: '博大精深', explanation: '博大：广大。精深：精湛深刻。形容学识、思想、理论广博丰富，精湛深刻。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
-  { id: '1-4', word: '历久弥新', explanation: '弥：更加。指经历长久的时间而更加鲜活，更加有活力，更显价值。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
-  { id: '1-5', word: '兼容并蓄', explanation: '并：一起。蓄：积聚，储存。对不同的人或事物都能同时收容保留。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
+  { id: '1-1', word: '源远流长', explanation: '源头远，水流长。也比喻历史悠久。', example: '中华文化源远流长，博大精深。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
+  { id: '1-2', word: '连绵不绝', explanation: '意思是连续而不中断。', example: '远处的山峦连绵不绝，消失在云雾之中。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
+  { id: '1-3', word: '博大精深', explanation: '博大：广大。精深：精湛深刻。形容学识、思想、理论广博丰富，精湛深刻。', example: '这部著作内容博大精深，值得反复研读。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
+  { id: '1-4', word: '历久弥新', explanation: '弥：更加。指经历长久的时间而更加鲜活，更加有活力，更显价值。', example: '经典文学作品往往具有历久弥新的魅力。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
+  { id: '1-5', word: '兼容并蓄', explanation: '并：一起。蓄：积聚，储存。对不同的人或事物都能同时收容保留。', example: '盛唐文化以其兼容并蓄的胸怀，吸收了众多外来文化的精华。', group: '第一组', category: '中华文明传统文化', subCategory: '中华文明传统文化', type: 'idiom' },
 
   // 第二组：文化传承
-  { id: '2-1', word: '一脉相承', explanation: '一脉：指一个血统或一个派系。相承：相续传承。由一个血统或一个派别世代相传承袭下来。比喻人或事物间的传承关系。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
-  { id: '2-2', word: '血脉相通', explanation: '血脉：血统。原指有血缘亲属关系。也比喻极亲近的关系。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
-  { id: '2-3', word: '薪火相传', explanation: '意思是比喻学问和技艺代代相传。比喻师生授受不绝，或种族、血统、文化精神的传承，绵延不尽。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
-  { id: '2-4', word: '不绝如缕', explanation: '绝：断。缕：细线。像一根细线那样，似断非断。也比喻情势危急。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
-  { id: '2-5', word: '陈陈相因', explanation: '粮仓里的米谷一年接一年地堆积起来。比喻沿袭老一套，没有改进。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
+  { id: '2-1', word: '一脉相承', explanation: '一脉：指一个血统或一个派系。相承：相续传承。由一个血统或一个派别世代相传承袭下来。比喻人或事物间的传承关系。', example: '这两代艺术家的创作风格一脉相承，都体现了对自然的热爱。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
+  { id: '2-2', word: '血脉相通', explanation: '血脉：血统。原指有血缘亲属关系。也比喻极亲近的关系。', example: '无论身在何处，海内外华人始终血脉相通。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
+  { id: '2-3', word: '薪火相传', explanation: '意思是比喻学问和技艺代代相传。比喻师生授受不绝，或种族、血统、文化精神的传承，绵延不尽。', example: '传统手工艺需要年轻一代的参与，才能薪火相传。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
+  { id: '2-4', word: '不绝如缕', explanation: '绝：断。缕：细线。像一根细线那样，似断非断。也比喻情势危急。', example: '这种古老的乐器演奏声不绝如缕，如泣如诉。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
+  { id: '2-5', word: '陈陈相因', explanation: '粮仓里的米谷一年接一年地堆积起来。比喻沿袭老一套，没有改进。', example: '这种陈陈相因的教学模式已经无法适应现代教育的需求。', group: '第二组', category: '文化传承', subCategory: '传承不间断', type: 'idiom' },
   { id: '2-6', word: '口耳相传', explanation: '口说耳听，递相传授。', group: '第二组', category: '文化传承', subCategory: '传承方式', type: 'idiom' },
   { id: '2-7', word: '衣钵相传', explanation: '原为佛家语。中国禅宗师父将道法传授给徒弟时常常举行授予衣钵的仪式。现用以比喻一般师徒、父子之间思想、技能、学问的继承和传授。', group: '第二组', category: '文化传承', subCategory: '传承方式', type: 'idiom' },
   { id: '2-8', word: '后继无人', explanation: '继：继续，继承。没有继承的人。形容事业缺少接班人。', group: '第二组', category: '文化传承', subCategory: '传承方式', type: 'idiom' },

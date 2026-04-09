@@ -6,7 +6,8 @@ import { WordEntry, DiscriminationEntry } from './types';
 import WordCard from './components/WordCard';
 import SearchBar from './components/SearchBar';
 import DetailModal from './components/DetailModal';
-import { BookOpen, Sparkles, GraduationCap, Search, MessageSquare, X, Send, Loader2, Bookmark, Target, CheckCircle2, Settings2 } from 'lucide-react';
+import QuizView from './components/QuizView';
+import { BookOpen, Sparkles, GraduationCap, Search, MessageSquare, X, Send, Loader2, Bookmark, Target, CheckCircle2, Settings2, Brain } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
@@ -33,6 +34,7 @@ export default function App() {
     return saved ? parseInt(saved) : 10;
   });
   const [isGoalModalOpen, setIsGoalModalOpen] = useState(false);
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
   const [lastMarkedId, setLastMarkedId] = useState<string | null>(() => {
     return localStorage.getItem('lastMarkedId');
   });
@@ -192,6 +194,14 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => setIsQuizOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-purple-50 text-purple-600 rounded-xl hover:bg-purple-100 transition-all font-bold text-sm border border-purple-100"
+            >
+              <Brain size={18} />
+              <span className="hidden sm:inline">知识测验</span>
+            </button>
+
             <button
               onClick={() => setIsGoalModalOpen(true)}
               className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-xl hover:bg-green-100 transition-all font-bold text-sm border border-green-100"
@@ -473,6 +483,13 @@ export default function App() {
               </div>
             </motion.div>
           </>
+        )}
+      </AnimatePresence>
+
+      {/* Quiz View */}
+      <AnimatePresence>
+        {isQuizOpen && (
+          <QuizView onClose={() => setIsQuizOpen(false)} />
         )}
       </AnimatePresence>
 

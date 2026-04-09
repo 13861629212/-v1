@@ -5,60 +5,70 @@ export const discriminations: DiscriminationEntry[] = [
     id: 'd1',
     words: ['发源', '发端', '发祥'],
     content: '【发源】指河流开始流出的地方，也借指事物发端、起源的所在。对象多为河流、革命、学说等。\\n【发端】指（事情）起头；开头。\\n【发祥】原指帝王祖先兴起的地方，现多指民族、文化等发源的地方。',
+    example: '黄河是中华文明的发祥地。',
     type: 'discrimination'
   },
   {
     id: 'd2',
     words: ['法治', '法制'],
     content: '【法治】根据法律治理国家。\\n【法制】法律制度。',
+    example: '我们要加强法制建设，实现依法治国。',
     type: 'discrimination'
   },
   {
     id: 'd3',
     words: ['反映', '反应'],
     content: '【反映】①比喻把客观事物的实质表现出来。②把情况、意见等告诉上级或有关部门。\\n【反应】①机体受到刺激而引起的相应活动。②化学变化。③事情引起的意见、态度或行动。',
+    example: '他的话反映了广大群众的心声。',
     type: 'discrimination'
   },
   {
     id: 'd4',
     words: ['范围', '范畴'],
     content: '【范围】周围界限。\\n【范畴】类型；范围。多用于理论、哲学。',
+    example: '这已经超出了我的研究范围。',
     type: 'discrimination'
   },
   {
     id: 'd5',
     words: ['妨碍', '妨害'],
     content: '【妨碍】使不能顺利进行。\\n【妨害】有害于。',
+    example: '随地吐痰不仅妨碍卫生，也影响城市形象。',
     type: 'discrimination'
   },
   {
     id: 'd6',
     words: ['分辩', '分辨'],
     content: '【分辩】辩白；解释。\\n【分辨】辨别。',
+    example: '面对指责，他极力分辩。',
     type: 'discrimination'
   },
   {
     id: 'd7',
     words: ['分外', '格外'],
     content: '【分外】超过平常；特别。\\n【格外】表示程度高，有“更加”的意思。',
+    example: '今天的月色分外明亮。',
     type: 'discrimination'
   },
   {
     id: 'd8',
     words: ['风气', '风俗', '风尚'],
     content: '【风气】社会上或某个集体中流行的爱好或习惯。\\n【风俗】社会上长期形成的风尚、礼节、习惯等的总和。\\n【风尚】在一定时期中社会上流行的风气和习惯。',
+    example: '勤俭节约是中华民族的优良风尚。',
     type: 'discrimination'
   },
   {
     id: 'd9',
     words: ['伏法', '服法'],
     content: '【伏法】（罪犯）被处死刑。\\n【服法】认罪。',
+    example: '罪大恶极的凶手终于伏法了。',
     type: 'discrimination'
   },
   {
     id: 'd10',
     words: ['扶养', '抚养', '赡养'],
     content: '【扶养】扶助、供养。用于平辈之间。\\n【抚养】爱护并教养。用于长辈对晚辈。\\n【赡养】供给生活费。用于晚辈对长辈。',
+    example: '父母有抚养子女的义务，子女有赡养父母的责任。',
     type: 'discrimination'
   },
   {
